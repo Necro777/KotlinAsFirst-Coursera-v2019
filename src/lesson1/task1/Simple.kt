@@ -2,6 +2,9 @@
 
 package lesson1.task1
 
+
+
+
 import kotlin.math.*
 
 /**
@@ -51,7 +54,9 @@ fun quadraticRootProduct(a: Double, b: Double, c: Double): Double {
 fun main() {
     val x1x2 = quadraticRootProduct(1.0, 13.0, 42.0)
     println("Root product: $x1x2")
+    println(abc(10.0))
 }
+fun abc(a: Double): Double = sqrt(a)
 
 /**
  * Тривиальная
@@ -59,7 +64,7 @@ fun main() {
  * Пользователь задает время в часах, минутах и секундах, например, 8:20:35.
  * Рассчитать время в секундах, прошедшее с начала суток (30035 в данном случае).
  */
-fun seconds(hours: Int, minutes: Int, seconds: Int): Int = TODO()
+fun seconds(hours: Int, minutes: Int, seconds: Int): Int = hours*60*60 + minutes*60 +seconds
 
 /**
  * Тривиальная

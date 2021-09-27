@@ -55,6 +55,12 @@ class Tests {
     }
 
     @Test
+    fun abc() {
+        assertEquals(3.1, abc(9.0), 0.2)
+
+    }
+
+    @Test
     @Tag("Trivial")
     fun lengthInMeters() {
         assertEquals(18.98, lengthInMeters(8, 2, 11), 1e-2)
